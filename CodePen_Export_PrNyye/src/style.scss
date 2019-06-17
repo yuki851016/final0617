@@ -1,0 +1,224 @@
+$top_bgc:#A20055;
+$top_color: #ffffff;
+$color1:#191970;
+$color2:#000080;
+$color3:#483D8B;
+$color4:#4169E1;
+$color5:#000079;
+
+
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap');
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  
+}
+
+body {
+  position: relative;
+  background-color: #fcf6ba;
+  box-sizing: border-box;
+
+  border-bottom: solid 30px #fff;
+  overflow: hidden;
+
+}
+.Top {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background-color: #FFFF77;
+  color: $top_color;
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-left: 20px;
+  font-family: 'Anton', sans-serif;
+  
+}
+
+.screen {
+  width: 100%;
+  height: 100%;
+  left: 100%;
+}
+
+.namecard {
+  position: fixed;
+  width: 330px;
+  height: 40px;
+  left: 55%;
+  top: 65%; 
+  padding: 0px 10px 30px 20px;
+  overflow: hidden;
+  background-color: #000079;
+  color: $top_color;
+  border: solid 0.5px rgba(0, 0, 0, 0.15);
+  box-shadow: 10px 15px 5px -5px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  font-family: 'Noto Sans TC', sans-serif;  
+  transition: 0.5s;
+
+  h2 {
+  font-size: 20px;
+  }
+}
+
+.namecard:hover{
+  transform: translate(-30px,-30px);
+  box-shadow: -10px -15px 5px -5px rgba(0,0,0,0.5);
+}
+
+
+.allbub {
+  width: 100%;
+  height: 100%;
+  border-radius: 0px;
+  z-index: -3;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #333;
+
+
+@keyframes falling{
+  0%,100%{
+    opacity: 0;
+  }
+  70%{
+    opacity:1;
+  }   
+  0%{
+    transform: translate(100%, 0px);
+}
+  100%{
+    transform: translate(0px,100%);
+  }
+ }
+  
+[class*='bub'] {
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 15px;
+  animation: falling 2s infinite;
+}
+
+@for $i from 1 through 20 {
+  .bub#{$i} {
+    $posX: random()*100%;
+     $posY: random()* -100%+90%;
+   position: absolute;
+    left: $posX;
+    top: $posY;
+    animation-delay: $i*-0.1s;
+  }
+}
+
+}
+
+
+@keyframes back {
+  0% {
+    background-color: $color1;
+  }
+  25% {
+    background-color: $color2;
+  }
+  50% {
+    background-color: $color5;
+  }
+  75% {
+    background-color: $color4;
+  }
+  100% {
+    background-color: $color1;
+  }
+}
+.allbub {
+    animation: back 8s infinite;
+}
+
+@keyframes title {
+  0% {
+    margin-top: -200px;
+    margin-left: -300px;
+  }
+  50% {
+    margin-top: -75px;
+    margin-left: -50px;
+  }
+  100% {
+    margin-top: -100px;
+    margin-left: -75px;
+  }
+}
+
+.Top {
+  animation-name: title;
+  animation-duration: 1.5s;
+  
+}
+
+  .snowman-position{
+            height: 400px;
+            width: 500px;
+            position: absolute;
+            margin: auto;
+            left:0;
+            right: 0;
+            bottom: 0;
+        }
+        .snowman{
+            position: relative;
+            left:5px;
+            top:53px;
+        }
+        .face{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: white;
+            position: relative;
+            top:100px;
+            left:95px;
+        }
+       
+        .eye-left,.eye-right{
+            background-color: #000000;
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            position: relative;
+        }
+        .eye-left{
+            top:30px;
+            left:30px;
+        }
+        .eye-right{
+            top:20px;
+            left:65px;
+        }
+        .nose{
+            height: 0;
+            width: 0;
+            border-top: 30px solid #ea0000	;
+            border-right: 8px solid transparent;
+            border-left:8px solid transparent;
+            position: relative;
+            top:30px;
+            left:45px;
+        }
+
+        .body{
+            height: 170px;
+            width: 170px;
+            background-color: white;
+            border-radius: 50%;
+            position: relative;
+            top:145px;
+            left:70px;
+        }

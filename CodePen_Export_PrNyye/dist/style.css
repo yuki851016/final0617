@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap");
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+body {
+  position: relative;
+  background-color: #fcf6ba;
+  box-sizing: border-box;
+  border-bottom: solid 30px #fff;
+  overflow: hidden;
+}
+
+.Top {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background-color: #FFFF77;
+  color: #ffffff;
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-left: 20px;
+  font-family: 'Anton', sans-serif;
+}
+
+.screen {
+  width: 100%;
+  height: 100%;
+  left: 100%;
+}
+
+.namecard {
+  position: fixed;
+  width: 330px;
+  height: 40px;
+  left: 55%;
+  top: 65%;
+  padding: 0px 10px 30px 20px;
+  overflow: hidden;
+  background-color: #000079;
+  color: #ffffff;
+  border: solid 0.5px rgba(0, 0, 0, 0.15);
+  box-shadow: 10px 15px 5px -5px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  font-family: 'Noto Sans TC', sans-serif;
+  transition: 0.5s;
+}
+.namecard h2 {
+  font-size: 20px;
+}
+
+.namecard:hover {
+  transform: translate(-30px, -30px);
+  box-shadow: -10px -15px 5px -5px rgba(0, 0, 0, 0.5);
+}
+
+.allbub {
+  width: 100%;
+  height: 100%;
+  border-radius: 0px;
+  z-index: -3;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #333;
+}
+@keyframes falling {
+  0%,100% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  0% {
+    transform: translate(100%, 0px);
+  }
+  100% {
+    transform: translate(0px, 100%);
+  }
+}
+.allbub [class*='bub'] {
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 15px;
+  animation: falling 2s infinite;
+}
+.allbub .bub1 {
+  position: absolute;
+  left: 94.1112421227%;
+  top: 51.8283862557%;
+  animation-delay: -0.1s;
+}
+.allbub .bub2 {
+  position: absolute;
+  left: 17.3110674789%;
+  top: 28.3748941736%;
+  animation-delay: -0.2s;
+}
+.allbub .bub3 {
+  position: absolute;
+  left: 71.443733411%;
+  top: 50.6137501467%;
+  animation-delay: -0.3s;
+}
+.allbub .bub4 {
+  position: absolute;
+  left: 51.2815276386%;
+  top: 31.4752778956%;
+  animation-delay: -0.4s;
+}
+.allbub .bub5 {
+  position: absolute;
+  left: 2.1350686685%;
+  top: 67.8999388267%;
+  animation-delay: -0.5s;
+}
+.allbub .bub6 {
+  position: absolute;
+  left: 96.7839645261%;
+  top: 57.2052007094%;
+  animation-delay: -0.6s;
+}
+.allbub .bub7 {
+  position: absolute;
+  left: 79.2607748268%;
+  top: 8.601703272%;
+  animation-delay: -0.7s;
+}
+.allbub .bub8 {
+  position: absolute;
+  left: 68.2268975253%;
+  top: -5.1957731601%;
+  animation-delay: -0.8s;
+}
+.allbub .bub9 {
+  position: absolute;
+  left: 12.7358218979%;
+  top: 85.7419822362%;
+  animation-delay: -0.9s;
+}
+.allbub .bub10 {
+  position: absolute;
+  left: 9.2466966723%;
+  top: -3.0936989256%;
+  animation-delay: -1s;
+}
+.allbub .bub11 {
+  position: absolute;
+  left: 28.375605139%;
+  top: 8.7916349999%;
+  animation-delay: -1.1s;
+}
+.allbub .bub12 {
+  position: absolute;
+  left: 51.1961451715%;
+  top: 75.5985161347%;
+  animation-delay: -1.2s;
+}
+.allbub .bub13 {
+  position: absolute;
+  left: 47.3163036142%;
+  top: 55.5656362901%;
+  animation-delay: -1.3s;
+}
+.allbub .bub14 {
+  position: absolute;
+  left: 55.4703301109%;
+  top: 25.715841394%;
+  animation-delay: -1.4s;
+}
+.allbub .bub15 {
+  position: absolute;
+  left: 62.1426215119%;
+  top: 30.8009681925%;
+  animation-delay: -1.5s;
+}
+.allbub .bub16 {
+  position: absolute;
+  left: 27.3040213552%;
+  top: 13.1288326106%;
+  animation-delay: -1.6s;
+}
+.allbub .bub17 {
+  position: absolute;
+  left: 74.0372856074%;
+  top: 0.4083053853%;
+  animation-delay: -1.7s;
+}
+.allbub .bub18 {
+  position: absolute;
+  left: 26.2731250181%;
+  top: 86.1365303248%;
+  animation-delay: -1.8s;
+}
+.allbub .bub19 {
+  position: absolute;
+  left: 86.1890708274%;
+  top: 5.1775517272%;
+  animation-delay: -1.9s;
+}
+.allbub .bub20 {
+  position: absolute;
+  left: 5.2084743396%;
+  top: 48.7298965971%;
+  animation-delay: -2s;
+}
+
+@keyframes back {
+  0% {
+    background-color: #191970;
+  }
+  25% {
+    background-color: #000080;
+  }
+  50% {
+    background-color: #000079;
+  }
+  75% {
+    background-color: #4169E1;
+  }
+  100% {
+    background-color: #191970;
+  }
+}
+.allbub {
+  animation: back 8s infinite;
+}
+
+@keyframes title {
+  0% {
+    margin-top: -200px;
+    margin-left: -300px;
+  }
+  50% {
+    margin-top: -75px;
+    margin-left: -50px;
+  }
+  100% {
+    margin-top: -100px;
+    margin-left: -75px;
+  }
+}
+.Top {
+  animation-name: title;
+  animation-duration: 1.5s;
+}
+
+.snowman-position {
+  height: 400px;
+  width: 500px;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.snowman {
+  position: relative;
+  left: 5px;
+  top: 53px;
+}
+
+.face {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+  top: 100px;
+  left: 95px;
+}
+
+.eye-left, .eye-right {
+  background-color: #000000;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.eye-left {
+  top: 30px;
+  left: 30px;
+}
+
+.eye-right {
+  top: 20px;
+  left: 65px;
+}
+
+.nose {
+  height: 0;
+  width: 0;
+  border-top: 30px solid #ea0000;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+  position: relative;
+  top: 30px;
+  left: 45px;
+}
+
+.body {
+  height: 170px;
+  width: 170px;
+  background-color: white;
+  border-radius: 50%;
+  position: relative;
+  top: 145px;
+  left: 70px;
+}
